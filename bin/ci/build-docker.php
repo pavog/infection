@@ -50,4 +50,4 @@ $ref = escapeshellarg($ref);
 $composer_branch = escapeshellarg($composer_branch);
 $platform = escapeshellarg($platform);
 
-r("docker buildx build --push . -t ghcr.io/$user/infection:$ref-$platform --build-arg INFECTION_REV=$composer_branch -f bin/docker/Dockerfile");
+r("docker buildx build --push . -t ghcr.io/$user/infection:$ref-$platform --build-arg INFECTION_REV=$composer_branch -f devTools/Dockerfile");
